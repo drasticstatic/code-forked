@@ -1,8 +1,8 @@
 .DS_Store
 
 # Every subdirectory is its own independent forked repo -- see README.md
-free-claude-code/
-tradingview-mcp-jackson/
-robinhood-mcp/
-hummingbot-mcp/
-hummingbot/
+/free-claude-code/
+/tradingview-mcp-jackson/
+/robinhood-mcp/
+/hummingbot-mcp/
+/hummingbot/
