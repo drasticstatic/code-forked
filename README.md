@@ -7,14 +7,15 @@ more forks accumulate.
 
 Same lightweight-parent pattern as `~/code/`/`~/dappu/` — see
 [`my-template/NESTED-REPOS-GUIDE.md`](https://github.com/drasticstatic/my-template/blob/main/NESTED-REPOS-GUIDE.md).
-This repo tracks only this README and its own `.gitignore`; every subdirectory is its own
-independent repo, each with a real upstream it forked from.
+This repo tracks this README, its own `.gitignore`, its agent rules and hooks, and [`audits/`](./audits/README.md)
+(reviews of the outside code these forks carry); every other subdirectory is its own independent repo, each with a
+real upstream it forked from.
 
 ## What's here, and whose scope
 
 | Directory | Repo | Upstream | Scope |
 |---|---|---|---|
-| `free-claude-code/` | [`drasticstatic/free-claude-code`](https://github.com/drasticstatic/free-claude-code) | [`Alishahryar1/free-claude-code`](https://github.com/Alishahryar1/free-claude-code) | **Alfred's scope** — Anthropic-compatible proxy for NVIDIA NIM, DeepSeek, OpenRouter, Ollama |
+| `free-claude-code/` | [`drasticstatic/free-claude-code`](https://github.com/drasticstatic/free-claude-code) | [`Alishahryar1/free-claude-code`](https://github.com/Alishahryar1/free-claude-code) | **Alfred's scope** — Anthropic-compatible proxy for NVIDIA NIM, DeepSeek, OpenRouter, Ollama. Pinned to upstream `v6.19.6` (`da29b69d`), [reviewed 2026-11-12](./audits/free-claude-code/2026-11-12_v6.19.6_da29b69d.md); runs as `free-claude-code_private` |
 | `tradingview-mcp-jackson/` | [`drasticstatic/tradingview-mcp-jackson`](https://github.com/drasticstatic/tradingview-mcp-jackson) | [`LewisWJackson/tradingview-mcp-jackson`](https://github.com/LewisWJackson/tradingview-mcp-jackson) | **Fortuna's scope** — TradingView Desktop MCP, trading system working copy |
 | `robinhood-mcp/` | [`drasticstatic/robinhood-mcp`](https://github.com/drasticstatic/robinhood-mcp) | [`verygoodplugins/robinhood-mcp`](https://github.com/verygoodplugins/robinhood-mcp) | **Fortuna's scope** — Robinhood MCP, trading system working copy |
 | `hummingbot-mcp/` | [`drasticstatic/hummingbot-mcp`](https://github.com/drasticstatic/hummingbot-mcp) | [`hummingbot/mcp`](https://github.com/hummingbot/mcp) | **Fortuna's scope** — Hummingbot MCP layer, trading system working copy |
@@ -23,6 +24,12 @@ independent repo, each with a real upstream it forked from.
 `hummingbot/` is a plain local grouping folder (not a repo itself), holding `hummingbot-api/`
 alongside where a sibling `hummingbot-mcp` clone was once considered — kept as-is rather than
 flattened, since it costs nothing and groups the two Hummingbot-related forks visually.
+
+## Reviews
+
+A fork here moves to a new upstream revision only after that revision has been read as text, and the review is
+kept in [`audits/`](./audits/README.md), one file per project and revision. Each fork's front door
+(`DRASTICSTATIC.md`) names the revision it is pinned to and links back.
 
 ## Why fork instead of just pointing at upstream
 
