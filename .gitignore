@@ -6,3 +6,6 @@
 /robinhood-mcp/
 /hummingbot-mcp/
 /hummingbot/
+/basemode/
+# A download kept locally for reading, not a fork; not tracked here
+/Lewis-Jackson-Investing/

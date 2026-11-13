@@ -20,6 +20,11 @@ real upstream it forked from.
 | `robinhood-mcp/` | [`drasticstatic/robinhood-mcp`](https://github.com/drasticstatic/robinhood-mcp) | [`verygoodplugins/robinhood-mcp`](https://github.com/verygoodplugins/robinhood-mcp) | **Fortuna's scope** — Robinhood MCP, trading system working copy |
 | `hummingbot-mcp/` | [`drasticstatic/hummingbot-mcp`](https://github.com/drasticstatic/hummingbot-mcp) | [`hummingbot/mcp`](https://github.com/hummingbot/mcp) | **Fortuna's scope** — Hummingbot MCP layer, trading system working copy |
 | `hummingbot/hummingbot-api/` | [`drasticstatic/hummingbot-api`](https://github.com/drasticstatic/hummingbot-api) | [`hummingbot/hummingbot-api`](https://github.com/hummingbot/hummingbot-api) | **Fortuna's scope** — Hummingbot API server, trading system working copy |
+| `basemode/` | [`drasticstatic/base`](https://github.com/drasticstatic/base) | [`ChristopherKahler/base`](https://github.com/ChristopherKahler/base) | **Fortuna's and Alfred's scope** — BASE, the `base` tool by Chris Kahler (Claude Code memory and code-map companion). Pinned to `v0.16.0` (`a37b9a8f`) on a branch awaiting review; [reviewed 2026-11-12](./audits/base/2026-11-12_v0.16.0_a37b9a8f.md); not installed anywhere |
+
+The local folder `Lewis-Jackson-Investing/` holds two MIT-licensed terminals by Lewis Jackson, downloaded from the
+publisher's site as zips and kept locally as reading material: not forked, not reviewed and not run. A download that
+is not a fork is not tracked here.
 
 `hummingbot/` is a plain local grouping folder (not a repo itself), holding `hummingbot-api/`
 alongside where a sibling `hummingbot-mcp` clone was once considered — kept as-is rather than
@@ -30,6 +35,10 @@ flattened, since it costs nothing and groups the two Hummingbot-related forks vi
 A fork here moves to a new upstream revision only after that revision has been read as text, and the review is
 kept in [`audits/`](./audits/README.md), one file per project and revision. Each fork's front door
 (`DRASTICSTATIC.md`) names the revision it is pinned to and links back.
+
+**How forks are kept.** Nothing updates itself: there is no scheduled sync and no auto-merge, and a tool's own
+self-updater is switched off before it is ever run. A fork moves only when there is a reason to (a fix we need, a
+security advisory, or something that broke), and each move is the same three steps: review, scan, merge.
 
 ## Why fork instead of just pointing at upstream
 
