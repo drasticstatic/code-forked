@@ -34,3 +34,4 @@ audits/<project>/<YYYY-MM-DD>_<tag>_<short commit>.md
 | Project | Revision | Reviewed | Review |
 |---|---|---|---|
 | free-claude-code ([upstream](https://github.com/Alishahryar1/free-claude-code), [our fork](https://github.com/drasticstatic/free-claude-code)) | `v6.19.6`, `da29b69d` | 2026-11-12 | [`free-claude-code/2026-11-12_v6.19.6_da29b69d.md`](./free-claude-code/2026-11-12_v6.19.6_da29b69d.md) |
+| BASE, the `base` tool ([upstream](https://github.com/ChristopherKahler/base), [our fork](https://github.com/drasticstatic/base)) | `v0.16.0`, `a37b9a8f` | 2026-11-12 | [`base/2026-11-12_v0.16.0_a37b9a8f.md`](./base/2026-11-12_v0.16.0_a37b9a8f.md) |
